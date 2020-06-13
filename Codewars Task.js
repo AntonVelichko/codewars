@@ -8,3 +8,6 @@ function countInfinity(arr){
 console.log(countInfinity([1/0, 1/0]));
 
 console.log(isFinite(1/0));
+
+
+// fdgfdgdfgfd
