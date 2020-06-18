@@ -3,6 +3,44 @@
 
 
 
+// https://www.codewars.com/kata/57293671c98f77e84b000065/solutions/javascript
+
+function type(value) {
+    return {}.toString.call(value).slice(8, -1).toLowerCase();
+}
+
+
+
+const type = value => Object.prototype.toString.call(value).slice(8, -1).toLowerCase();
+
+
+
+function type(value) {
+    return ({}).toString.call(value).match(/\s([a-zA-Z]+)/)[1].toLowerCase()
+}
+
+
+
+function type(value) {
+    if (value === null)
+        return 'null';
+    const t = typeof value;
+    return t === 'object' ? value.constructor.name.toLowerCase() : t;
+}
+
+
+
+function type(value) {
+    let str = {}.toString.call(value);
+    let res = '';
+    for (let i = 8; i < str.length - 1; i++){
+        res = res + str[i];
+    }
+    return res.toLowerCase();
+}
+
+
+
 
 // https://www.codewars.com/kata/545991b4cbae2a5fda000158/train/javascript
 
