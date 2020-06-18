@@ -3,6 +3,37 @@
 
 
 
+// https://www.codewars.com/kata/5b097da6c3323ac067000036/train/javascript
+
+function solve(a, b) {
+    let a1 = 0, a2 = 0, a3 = 0, b1 = 0, b2 = 0, b3 = 0;
+    a[0] > b[0] ? a1+=1 : a[0] < b[0] ? b1+=1 : 0;
+    a[1] > b[1] ? a1+=1 : a[1] < b[1] ? b1+=1 : 0;
+    a[2] > b[2] ? a1+=1 : a[2] < b[2] ? b1+=1 : 0;
+
+    let aa = a1+a2+a3;
+    let bb = b1+b2+b3;
+
+    return aa > bb ? `${aa}, ${bb}: Alice made "Kurt" proud!` : aa < bb ?
+        `${aa}, ${bb}: Bob made "Jeff" proud!` : `${aa}, ${bb}: that looks like a "draw"! Rock on!`;
+}
+
+
+
+function solve(a, b) {
+    let [x, y] = [0,0];
+    for (let i = 0; i < 3; i++) {
+        if (a[i] > b[i]) x++;
+        else if (a[i] < b[i]) y++;
+    }
+    if (x > y) return `${x}, ${y}: Alice made "Kurt" proud!`;
+    else if (x < y) return `${x}, ${y}: Bob made "Jeff" proud!`;
+    else return `${x}, ${y}: that looks like a "draw"! Rock on!`;
+
+
+
+
+
 // https://www.codewars.com/kata/58f8a3a27a5c28d92e000144/solutions/javascript
 
 function firstNonConsecutive (arr) {
