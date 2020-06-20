@@ -2,17 +2,21 @@
 
 
 
+// https://www.codewars.com/kata/557cd6882bfa3c8a9f0000c1/solutions/javascript
+
+function getAge(inputString){
+  return inputString.match(/[0-9]/)[0] * 1;
+}
 
 
 
 
 
-https://www.codewars.com/kata/53dc54212259ed3d4f00071c/solutions/javascript
+// https://www.codewars.com/kata/53dc54212259ed3d4f00071c/solutions/javascript
 
 function sum(numbers) {
   return numbers.reduce((a, b) => a + b, 0);
 }
-
 
 
 
