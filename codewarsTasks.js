@@ -3,6 +3,20 @@
 
 
 
+
+
+
+
+https://www.codewars.com/kata/53dc54212259ed3d4f00071c/solutions/javascript
+
+function sum(numbers) {
+  return numbers.reduce((a, b) => a + b, 0);
+}
+
+
+
+
+
 // https://www.codewars.com/kata/57293671c98f77e84b000065/solutions/javascript
 
 function type(value) {
