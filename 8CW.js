@@ -1,6 +1,12 @@
 
 //5
 
+// Basic Kata Lessons
+// https://www.codewars.com/kata/571edd157e8954bab500032d
+
+
+
+
 // 8 Fuel Calculator
 // https://www.codewars.com/kata/57b58827d2a31c57720012e8
 function fuelPrice(litres, pricePerLiter) {
