@@ -13,20 +13,22 @@ console.log(arr);
 
 // 1 - получить массив [0, 1, 2, ...,10]
 // с помощью присваивания значений элементам
-// const arr = [];
-// for (let i = 0; i <= 10; i++){
-//   arr[i] = i;
-// }
-// console.log(arr);
-// //DONE
-// // -------------------------------------------
+const arr = [];
+for (let i = 0; i <= 10; i++){
+   arr[i] = i;
+}
+console.log(arr);
+
+
+//DONE
+// -------------------------------------------
 // 2 - получить массив [0, 1, 2, ...,10]
 // с помощью метода push()
-// const arr = [];
-// for (let i = 0; i <= 10; i++){
-//   arr.push(i)
-// }
-// console.log(arr);// DONE
+const arr = [];
+for (let i = 0; i <= 10; i++){
+   arr.push(i)
+}
+console.log(arr);// DONE
 
 // 3 - получить массив [0, 1, 4, 9,...,100]
 // const arr = [];
