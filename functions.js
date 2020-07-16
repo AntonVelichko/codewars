@@ -2,6 +2,59 @@
 
 
 
+
+
+
+
+
+
+
+function abbrevName(name){
+    let arr = name.split(' ');
+    return `${arr[0][0]}.${arr[1][0]}`
+}
+console.log(abbrevName("Sam Harris"));
+
+//-------------------------------------------------
+
+function abbrevName(name){
+    name = name.toUpperCase();
+    let index = name.indexOf(' ')
+    return `${name[0]}.${name[index + 1]}`
+}
+console.log(abbrevName("Sam Harris"));
+
+
+///////////////////////////////////////////////////////////////////////////////////////
+
+
+function cutIt(arr){
+    const len = [];
+    for(let i = 0; i < arr.length; i++){
+        len.push(arr[i].length);
+    }
+    let min = Math.min(...len);
+    for(let i = o; i < arr.length; i++){
+        arr[i] = arr[i].slice(0, min);
+    }
+    return arr;
+}
+console.log(cutIt(['codewars', 'javascript', 'java']));
+
+//----------------------------------------------------------------------------
+
+function cutIt(arr){
+    const len = arr.map(le => el.length);
+    let min = Math.min(...len);
+    return arr.map(el => el.slice(0, min));
+}
+console.log(cutIt(['codewars', 'javascript', 'java']));
+
+
+
+///////////////////////////////////////////////////////////////////////////////////////
+
+
 function getSum(n){
     let str = '';
     let sum = 0;

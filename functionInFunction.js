@@ -1,5 +1,69 @@
 
 
+
+
+
+
+function countOfVowels(str) {
+    let count = 0;
+    let vowels = 'aouieAOUIE';
+//   str = str.toLowerCase();
+    // console.log(str);
+    for(let i = 0; i < str.length; i++){
+        if(vowels.includes(str[i]))
+            count++
+    }
+    return count;
+}
+console.log(countOfVowels('I like javascript'));
+
+//-----------------------------------------------------------------
+
+function arrayOfCount(arr) {
+    const res = [];
+    for(let i = 0; i < arr.length; i++){
+        res.push(countOfVowels(arr[i]))
+    }
+    return res;
+}
+console.log(arrayOfCount(['abc', 'banana', 'mango', 'apple']));
+
+//-----------------------------------------------------------------
+
+function countOfVowelsInWordOfPhrase(string){
+    let arr = atring.split(' ');
+    return arrayOfCount(arr);
+}
+console.log(countOfVowelsInWordOfPhrase('JavaScript language is very discombabulating'));
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+function countOfVowelsInWordOfPhrase(string){
+    let count;
+    let res = [];
+    let arr = string.split(' ')
+    let vowels = 'aouieAOIUE';
+    for(let i = 0; i < arr.length; i++){
+        count = 0;
+        for(let j = 0; j < arr[i].length; j++){
+            if(vowels.includes(arr[i][j]))
+                count++;
+        }
+        res.push(count)
+    }
+    return res;
+}
+console.log(countOfVowelsInWordOfPhrase('JavaScript language is very discombabulating'));
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
 // https://jsbin.com/qemacuzolo/edit?js,console
 // Задача 1: - определите количество простых чисел в диапазоне от m до n
 //   Простое число - число, у которого нет делителей, кроме
